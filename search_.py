@@ -5,10 +5,10 @@ import sys
 keywords = ["/bin/sh","popen","system","passw","token","secret", "dlopen","setreuid","upload","download","tar ","unzip"]
 PATH=""
 if (len(sys.argv[1]) > 2):
-    PATH=sys.argv[1]
+    PATH=sys.argv[1]+"/*"
 
 else:
-    PATH="./"
+    PATH="./*"
 
 for file_name in glob.glob(PATH):
     print("[+] %s " %(file_name))
